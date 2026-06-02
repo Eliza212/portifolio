@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kilatya Elizabeth Ngina | CV</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #ffffff;
+      --ink: #17212b;
+      --muted: #5c6c79;
+      --line: #d8e1e8;
+      --primary: #0f766e;
+      --accent: #eb6f2d;
+      --surface: #f4f8fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem 1rem;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(180deg, #eef5f7 0%, #f7fafb 100%);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    .cv-page {
+      width: min(920px, 100%);
+      margin: 0 auto;
+      background: var(--paper);
+      border-radius: 24px;
+      box-shadow: 0 20px 60px rgba(23, 33, 43, 0.1);
+      overflow: hidden;
+    }
+
+    .cv-header {
+      padding: 2.5rem;
+      background: linear-gradient(135deg, #0f766e, #134e4a);
+      color: #fff;
+    }
+
+    .cv-header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      line-height: 1.1;
+    }
+
+    .cv-header p {
+      margin: 0.55rem 0 0;
+      max-width: 46rem;
+    }
+
+    .cv-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-top: 1.4rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.85rem 1.35rem;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      background: #fff;
+      color: #0f766e;
+    }
+
+    .button.secondary {
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+    }
+
+    .cv-body {
+      padding: 2rem 2.5rem 2.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
+      gap: 2rem;
+    }
+
+    .section + .section {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 0.85rem;
+      color: var(--primary);
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    h3 {
+      margin: 0 0 0.25rem;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0 0 0.8rem;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    li + li {
+      margin-top: 0.45rem;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .sidebar-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 1.2rem;
+    }
+
+    .sidebar-card + .sidebar-card {
+      margin-top: 1rem;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .contact-list li + li {
+      margin-top: 0.65rem;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.4rem 0.7rem;
+      margin: 0.2rem 0.35rem 0.2rem 0;
+      border-radius: 999px;
+      background: #e8f7f5;
+      color: #0f5d57;
+      font-size: 0.93rem;
+      font-weight: 600;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    @media (max-width: 760px) {
+      body {
+        padding: 0;
+      }
+
+      .cv-page {
+        border-radius: 0;
+      }
+
+      .cv-header,
+      .cv-body {
+        padding: 1.4rem;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <article class="cv-page">
+    <header class="cv-header">
+      <h1>Kilatya Elizabeth Ngina</h1>
+      <p>Computer Science Graduate with practical experience in software development, web application development, and database management.</p>
+      <div class="cv-actions">
+        <a href="Kilatya_Elizabeth_Ngina_Professional_CV.zip" class="button primary" download>Download CV</a>
+        <a href="index.html" class="button secondary">Back to Portfolio</a>
+      </div>
+    </header>
+
+    <div class="cv-body">
+      <div class="grid">
+        <main>
+          <section class="section">
+            <h2>Professional Summary</h2>
+            <p>
+              Dedicated and motivated Computer Science graduate from Egerton University with practical experience in software development,
+              web application development, and database management. Skilled in frontend and backend technologies including JavaScript,
+              Node.js, Express.js, Flutter, Java, MySQL, and Firebase.
+            </p>
+            <p>
+              Passionate about developing efficient and user-friendly systems that solve real-world challenges, with strong problem-solving,
+              adaptability, and teamwork skills.
+            </p>
+          </section>
+
+          <section class="section">
+            <h2>Projects</h2>
+            <h3>Chama Management System</h3>
+            <p class="meta">Flutter, Node.js, MySQL</p>
+            <p>
+              Developed a mobile-based system for managing member contributions, savings, financial transactions, and records for Chama groups.
+            </p>
+
+            <h3>Lost and Found Management System</h3>
+            <p class="meta">Java</p>
+            <p>
+              Built a Java-based application to help users report and track lost and found items, improving organization and recovery workflows.
+            </p>
+          </section>
+
+          <section class="section">
+            <h2>Education</h2>
+            <h3>Egerton University</h3>
+            <p class="meta">Bachelor of Science in Computer Science</p>
+            <p>Awaiting graduation in November 2026.</p>
+          </section>
+        </main>
+
+        <aside>
+          <div class="sidebar-card">
+            <h2>Contact</h2>
+            <ul class="contact-list">
+              <li>Nairobi, Kenya</li>
+              <li>0112803994</li>
+              <li><a href="mailto:elizangina363@gmail.com">elizangina363@gmail.com</a></li>
+              <li><a href="https://github.com/Eliza212" target="_blank" rel="noreferrer">github.com/Eliza212</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card">
+            <h2>Technical Skills</h2>
+            <div class="tag">Java</div>
+            <div class="tag">JavaScript</div>
+            <div class="tag">HTML</div>
+            <div class="tag">CSS</div>
+            <div class="tag">Flutter</div>
+            <div class="tag">Node.js</div>
+            <div class="tag">Express.js</div>
+            <div class="tag">MySQL</div>
+            <div class="tag">Firebase</div>
+            <div class="tag">GitHub</div>
+            <div class="tag">VS Code</div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </article>
+</body>
+</html>
