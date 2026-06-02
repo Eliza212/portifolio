@@ -444,6 +444,17 @@ p {
   align-self: flex-start;
 }
 
+.contact-link {
+  margin-top: 0.9rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+  color: var(--accent);
+}
+
 .skill-card:hover,
 .project-card:hover,
 .contact-card:hover {

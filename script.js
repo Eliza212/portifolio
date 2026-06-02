@@ -19,7 +19,7 @@ if (menuToggle && navLinks) {
 cvDownloadLinks.forEach((link) => {
   link.addEventListener('click', async (event) => {
     const fileUrl = link.getAttribute('href');
-    const fileName = link.getAttribute('download') || 'cv.docx';
+    const fileName = link.getAttribute('download') || 'cv.pdf';
 
     if (!fileUrl || !window.fetch || !window.URL?.createObjectURL) {
       return;
